@@ -1,0 +1,99 @@
+\hypertarget{class_piece_wise_continue_polynomial}{}\section{Piece\+Wise\+Continue\+Polynomial Class Reference}
+\label{class_piece_wise_continue_polynomial}\index{Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}}
+
+
+{\ttfamily \#include $<$Piece\+Wise\+Continue\+Polynomial.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_piece_wise_continue_polynomial_a1f3e40054d55cacc9079084683e259e7}{Piece\+Wise\+Continue\+Polynomial}} (\mbox{\hyperlink{struct_data}{Data}} const \&data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{class_piece_wise_continue_polynomial_ac0f2d2cb02806e8866ea6b8c36434200}{solve\+\_\+least\+\_\+square\+\_\+degree}} (size\+\_\+t const \&degree, size\+\_\+t const \&Intervalle, vector$<$ double $>$ const \&x\+\_\+plot) const
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{class_piece_wise_continue_polynomial_a8d69630f929742ccc6f1a411cf5d9c15}{solve\+\_\+lagrange\+\_\+degree}} (size\+\_\+t const \&Intervalle, vector$<$ double $>$ const \&x\+\_\+plot) const
+\begin{DoxyCompactList}\small\item\em solves by using lagrange \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+(Note, this needs exactly one 
+
+Definition at line 34 of file Piece\+Wise\+Continue\+Polynomial.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_piece_wise_continue_polynomial_a1f3e40054d55cacc9079084683e259e7}\label{class_piece_wise_continue_polynomial_a1f3e40054d55cacc9079084683e259e7}} 
+\index{Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}!Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}}
+\index{Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}!Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}}
+\subsubsection{\texorpdfstring{Piece\+Wise\+Continue\+Polynomial()}{PieceWiseContinuePolynomial()}}
+{\footnotesize\ttfamily Piece\+Wise\+Continue\+Polynomial\+::\+Piece\+Wise\+Continue\+Polynomial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} const \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & is the input value from the files \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 116 of file Piece\+Wise\+Continue\+Polynomial.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_piece_wise_continue_polynomial_a8d69630f929742ccc6f1a411cf5d9c15}\label{class_piece_wise_continue_polynomial_a8d69630f929742ccc6f1a411cf5d9c15}} 
+\index{Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}!solve\+\_\+lagrange\+\_\+degree@{solve\+\_\+lagrange\+\_\+degree}}
+\index{solve\+\_\+lagrange\+\_\+degree@{solve\+\_\+lagrange\+\_\+degree}!Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}}
+\subsubsection{\texorpdfstring{solve\+\_\+lagrange\+\_\+degree()}{solve\_lagrange\_degree()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ double $>$ $>$ Piece\+Wise\+Continue\+Polynomial\+::solve\+\_\+lagrange\+\_\+degree (\begin{DoxyParamCaption}\item[{size\+\_\+t const \&}]{Intervalle,  }\item[{vector$<$ double $>$ const \&}]{x\+\_\+plot }\end{DoxyParamCaption}) const}
+
+
+
+solves by using lagrange 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Intervalle} & \\
+\hline
+{\em x\+\_\+plot} & gives the x axis values of the plot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+matrix containing the solved linear system 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file Piece\+Wise\+Continue\+Polynomial.\+cpp.
+
+\mbox{\Hypertarget{class_piece_wise_continue_polynomial_ac0f2d2cb02806e8866ea6b8c36434200}\label{class_piece_wise_continue_polynomial_ac0f2d2cb02806e8866ea6b8c36434200}} 
+\index{Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}!solve\+\_\+least\+\_\+square\+\_\+degree@{solve\+\_\+least\+\_\+square\+\_\+degree}}
+\index{solve\+\_\+least\+\_\+square\+\_\+degree@{solve\+\_\+least\+\_\+square\+\_\+degree}!Piece\+Wise\+Continue\+Polynomial@{Piece\+Wise\+Continue\+Polynomial}}
+\subsubsection{\texorpdfstring{solve\+\_\+least\+\_\+square\+\_\+degree()}{solve\_least\_square\_degree()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ double $>$ $>$ Piece\+Wise\+Continue\+Polynomial\+::solve\+\_\+least\+\_\+square\+\_\+degree (\begin{DoxyParamCaption}\item[{size\+\_\+t const \&}]{degree,  }\item[{size\+\_\+t const \&}]{Intervalle,  }\item[{vector$<$ double $>$ const \&}]{x\+\_\+plot }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em degree} & degree of the polynome \\
+\hline
+{\em Intervale} & \\
+\hline
+{\em x\+\_\+plot} & gives the x axis values of the plot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+matrix containing the solved linear system 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Piece\+Wise\+Continue\+Polynomial.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_piece_wise_continue_polynomial_8h}{Piece\+Wise\+Continue\+Polynomial.\+h}}\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_piece_wise_continue_polynomial_8cpp}{Piece\+Wise\+Continue\+Polynomial.\+cpp}}\end{DoxyCompactItemize}

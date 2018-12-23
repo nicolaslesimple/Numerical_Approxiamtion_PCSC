@@ -1,0 +1,193 @@
+\hypertarget{class_graph}{}\section{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph_ac2cc4f7971589f9674f4fbf3b7dc200c}{Graph}} (\mbox{\hyperlink{struct_data}{Data}} const \&data)
+\begin{DoxyCompactList}\small\item\em Constructor of the class graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_af3560cb4e5eaa08c33e3de253a4e60a3}{make\+\_\+graph\+\_\+least\+\_\+square}} (size\+\_\+t const \&degree) const
+\begin{DoxyCompactList}\small\item\em plots the graph for the least square regression \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a5fd01460d3981748a22269f9953d3486}{make\+\_\+graph\+\_\+lagrange}} () const
+\begin{DoxyCompactList}\small\item\em plots the graph for the lagrange polynoma regression \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_ab4a370a88a1041561e0788817eccd142}{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+least\+\_\+squares}} (size\+\_\+t const \&degree, size\+\_\+t const \&intervalle) const
+\begin{DoxyCompactList}\small\item\em Plots the graph for the least square regression. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a3206cf8103554c4c84f20abc96a1413c}{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+lagrange}} (size\+\_\+t const \&intervalle) const
+\begin{DoxyCompactList}\small\item\em Plots the graph for the lagrange regression. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a5326be30b090c2ba956d0e0211895fcd}{make\+\_\+graph\+\_\+\+F\+FT}} (\mbox{\hyperlink{struct_data}{Data}} data\+\_\+original)
+\begin{DoxyCompactList}\small\item\em Plots the graph for fourier approximation. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \mbox{\hyperlink{class_graph_a74825a258c65f3706369b367874b7f7b}{make\+\_\+x\+\_\+points}} () const
+\begin{DoxyCompactList}\small\item\em Create augmented x data set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_ac179fa82679466194ea2a396d4382904}{make\+\_\+graph}} (vector$<$ double $>$ const \&x, vector$<$ double $>$ const \&y) const
+\begin{DoxyCompactList}\small\item\em Create the plot with the library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+(Note, this needs exactly one 
+
+Definition at line 28 of file Graph.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graph_ac2cc4f7971589f9674f4fbf3b7dc200c}\label{class_graph_ac2cc4f7971589f9674f4fbf3b7dc200c}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} const \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of the class graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & is a structure that contains the information about the X and Y axis \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file Graph.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_ac179fa82679466194ea2a396d4382904}\label{class_graph_ac179fa82679466194ea2a396d4382904}} 
+\index{Graph@{Graph}!make\+\_\+graph@{make\+\_\+graph}}
+\index{make\+\_\+graph@{make\+\_\+graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{make\+\_\+graph()}{make\_graph()}}
+{\footnotesize\ttfamily void Graph\+::make\+\_\+graph (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ const \&}]{x,  }\item[{vector$<$ double $>$ const \&}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Create the plot with the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & and y which are the vector of values we want to plot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 116 of file Graph.\+cpp.
+
+\mbox{\Hypertarget{class_graph_a5326be30b090c2ba956d0e0211895fcd}\label{class_graph_a5326be30b090c2ba956d0e0211895fcd}} 
+\index{Graph@{Graph}!make\+\_\+graph\+\_\+\+F\+FT@{make\+\_\+graph\+\_\+\+F\+FT}}
+\index{make\+\_\+graph\+\_\+\+F\+FT@{make\+\_\+graph\+\_\+\+F\+FT}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{make\+\_\+graph\+\_\+\+F\+F\+T()}{make\_graph\_FFT()}}
+{\footnotesize\ttfamily void Graph\+::make\+\_\+graph\+\_\+\+F\+FT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}}}]{data\+\_\+original }\end{DoxyParamCaption})}
+
+
+
+Plots the graph for fourier approximation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+original} & is the data as it is in the file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Graph.\+cpp.
+
+\mbox{\Hypertarget{class_graph_a5fd01460d3981748a22269f9953d3486}\label{class_graph_a5fd01460d3981748a22269f9953d3486}} 
+\index{Graph@{Graph}!make\+\_\+graph\+\_\+lagrange@{make\+\_\+graph\+\_\+lagrange}}
+\index{make\+\_\+graph\+\_\+lagrange@{make\+\_\+graph\+\_\+lagrange}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{make\+\_\+graph\+\_\+lagrange()}{make\_graph\_lagrange()}}
+{\footnotesize\ttfamily void Graph\+::make\+\_\+graph\+\_\+lagrange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+plots the graph for the lagrange polynoma regression 
+
+Plot/// 
+
+Definition at line 39 of file Graph.\+cpp.
+
+\mbox{\Hypertarget{class_graph_af3560cb4e5eaa08c33e3de253a4e60a3}\label{class_graph_af3560cb4e5eaa08c33e3de253a4e60a3}} 
+\index{Graph@{Graph}!make\+\_\+graph\+\_\+least\+\_\+square@{make\+\_\+graph\+\_\+least\+\_\+square}}
+\index{make\+\_\+graph\+\_\+least\+\_\+square@{make\+\_\+graph\+\_\+least\+\_\+square}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{make\+\_\+graph\+\_\+least\+\_\+square()}{make\_graph\_least\_square()}}
+{\footnotesize\ttfamily void Graph\+::make\+\_\+graph\+\_\+least\+\_\+square (\begin{DoxyParamCaption}\item[{size\+\_\+t const \&}]{degree }\end{DoxyParamCaption}) const}
+
+
+
+plots the graph for the least square regression 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degree} & is a positive integer that represents the degree of the fitted polynome \\
+\hline
+\end{DoxyParams}
+Plot/// 
+
+Definition at line 15 of file Graph.\+cpp.
+
+\mbox{\Hypertarget{class_graph_a3206cf8103554c4c84f20abc96a1413c}\label{class_graph_a3206cf8103554c4c84f20abc96a1413c}} 
+\index{Graph@{Graph}!make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+lagrange@{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+lagrange}}
+\index{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+lagrange@{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+lagrange}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+lagrange()}{make\_graph\_piece\_wise\_lagrange()}}
+{\footnotesize\ttfamily void Graph\+::make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+lagrange (\begin{DoxyParamCaption}\item[{size\+\_\+t const \&}]{intervalle }\end{DoxyParamCaption}) const}
+
+
+
+Plots the graph for the lagrange regression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intervalle} & is the intervall for the the leat square method \\
+\hline
+\end{DoxyParams}
+Plot/// 
+
+Definition at line 60 of file Graph.\+cpp.
+
+\mbox{\Hypertarget{class_graph_ab4a370a88a1041561e0788817eccd142}\label{class_graph_ab4a370a88a1041561e0788817eccd142}} 
+\index{Graph@{Graph}!make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+least\+\_\+squares@{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+least\+\_\+squares}}
+\index{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+least\+\_\+squares@{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+least\+\_\+squares}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+least\+\_\+squares()}{make\_graph\_piece\_wise\_least\_squares()}}
+{\footnotesize\ttfamily void Graph\+::make\+\_\+graph\+\_\+piece\+\_\+wise\+\_\+least\+\_\+squares (\begin{DoxyParamCaption}\item[{size\+\_\+t const \&}]{degree,  }\item[{size\+\_\+t const \&}]{intervalle }\end{DoxyParamCaption}) const}
+
+
+
+Plots the graph for the least square regression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degree} & is a positive integer that represents the degree of the fitted polynome \\
+\hline
+{\em intervalle} & is the intervall for the the leat square method \\
+\hline
+\end{DoxyParams}
+Plot/// 
+
+Definition at line 51 of file Graph.\+cpp.
+
+\mbox{\Hypertarget{class_graph_a74825a258c65f3706369b367874b7f7b}\label{class_graph_a74825a258c65f3706369b367874b7f7b}} 
+\index{Graph@{Graph}!make\+\_\+x\+\_\+points@{make\+\_\+x\+\_\+points}}
+\index{make\+\_\+x\+\_\+points@{make\+\_\+x\+\_\+points}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{make\+\_\+x\+\_\+points()}{make\_x\_points()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Graph\+::make\+\_\+x\+\_\+points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Create augmented x data set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file Graph.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_graph_8h}{Graph.\+h}}\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_graph_8cpp}{Graph.\+cpp}}\end{DoxyCompactItemize}

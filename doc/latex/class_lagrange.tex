@@ -1,0 +1,61 @@
+\hypertarget{class_lagrange}{}\section{Lagrange Class Reference}
+\label{class_lagrange}\index{Lagrange@{Lagrange}}
+
+
+This is redefinition of the virtual class to implement \mbox{\hyperlink{class_lagrange}{Lagrange}} functions
+
+This is how we can calculate the approximation of the data using \mbox{\hyperlink{class_lagrange}{Lagrange}} Polynome.  
+
+
+
+
+{\ttfamily \#include $<$Lagrange.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_lagrange_a9040a01112a83bbefb0f1bef1d7983bb}{solve}} (vector$<$ double $>$ const \&data\+\_\+x, vector$<$ double $>$ const \&data\+\_\+y, double xi)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_lagrange}{Lagrange}} return directly the point corresponding to the argument xi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is redefinition of the virtual class to implement \mbox{\hyperlink{class_lagrange}{Lagrange}} functions
+
+This is how we can calculate the approximation of the data using \mbox{\hyperlink{class_lagrange}{Lagrange}} Polynome. 
+
+Definition at line 40 of file Lagrange.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lagrange_a9040a01112a83bbefb0f1bef1d7983bb}\label{class_lagrange_a9040a01112a83bbefb0f1bef1d7983bb}} 
+\index{Lagrange@{Lagrange}!solve@{solve}}
+\index{solve@{solve}!Lagrange@{Lagrange}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily double Lagrange\+::solve (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ const \&}]{data\+\_\+x,  }\item[{vector$<$ double $>$ const \&}]{data\+\_\+y,  }\item[{double}]{xi }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_lagrange}{Lagrange}} return directly the point corresponding to the argument xi. 
+
+\mbox{\hyperlink{class_polynomial}{Polynomial}} approximation by the \mbox{\hyperlink{class_lagrange}{Lagrange}} algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+x} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em data\+\_\+y} & is a vector with the values read from the data.\+dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. \\
+\hline
+{\em xi} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file Lagrange.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_lagrange_8h}{Lagrange.\+h}}\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_lagrange_8cpp}{Lagrange.\+cpp}}\end{DoxyCompactItemize}

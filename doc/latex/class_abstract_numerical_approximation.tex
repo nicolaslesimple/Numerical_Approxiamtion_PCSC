@@ -1,0 +1,94 @@
+\hypertarget{class_abstract_numerical_approximation}{}\section{Abstract\+Numerical\+Approximation Class Reference}
+\label{class_abstract_numerical_approximation}\index{Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}}
+
+
+{\ttfamily \#include $<$Abstract\+Numerical\+Approximation.\+h$>$}
+
+Inheritance diagram for Abstract\+Numerical\+Approximation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.850220cm]{class_abstract_numerical_approximation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_abstract_numerical_approximation_a841c83a7ae9f2146001581f3a7f8444a}{print\+Weight}} (vector$<$ double $>$ const \&weight)
+\begin{DoxyCompactList}\small\item\em Function that allows us to print the weight return by the approximation function \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{class_abstract_numerical_approximation_aed569247300dcb9eb54c6117903d2583}{Gaussian\+Elimination}} (vector$<$ vector$<$ double $>$$>$ A, vector$<$ double $>$ b, int number\+\_\+point)
+\begin{DoxyCompactList}\small\item\em Do the gaussian elimination to solve the system Ax = b. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \mbox{\hyperlink{class_abstract_numerical_approximation_abccba1cb27301df86f2adbfa5e6525a5}{Solve}} (vector$<$ vector$<$ double $>$$>$ A, vector$<$ double $>$b, int t, vector$<$ double $>$ x)
+\begin{DoxyCompactList}\small\item\em Solve the simplified system made by the gaussian elimination. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_abstract_numerical_approximation_a358054cadc54f5d0c7891505da040783}{$\sim$\+Abstract\+Numerical\+Approximation}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Abstract\+Numerical\+Approximation.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract_numerical_approximation_a358054cadc54f5d0c7891505da040783}\label{class_abstract_numerical_approximation_a358054cadc54f5d0c7891505da040783}} 
+\index{Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}!````~Abstract\+Numerical\+Approximation@{$\sim$\+Abstract\+Numerical\+Approximation}}
+\index{````~Abstract\+Numerical\+Approximation@{$\sim$\+Abstract\+Numerical\+Approximation}!Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}}
+\subsubsection{\texorpdfstring{$\sim$\+Abstract\+Numerical\+Approximation()}{~AbstractNumericalApproximation()}}
+{\footnotesize\ttfamily Abstract\+Numerical\+Approximation\+::$\sim$\+Abstract\+Numerical\+Approximation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Abstract\+Numerical\+Approximation.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_numerical_approximation_aed569247300dcb9eb54c6117903d2583}\label{class_abstract_numerical_approximation_aed569247300dcb9eb54c6117903d2583}} 
+\index{Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}!Gaussian\+Elimination@{Gaussian\+Elimination}}
+\index{Gaussian\+Elimination@{Gaussian\+Elimination}!Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}}
+\subsubsection{\texorpdfstring{Gaussian\+Elimination()}{GaussianElimination()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ double $>$ $>$ Abstract\+Numerical\+Approximation\+::\+Gaussian\+Elimination (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ double $>$$>$}]{A,  }\item[{vector$<$ double $>$}]{b,  }\item[{int}]{number\+\_\+point }\end{DoxyParamCaption})}
+
+
+
+Do the gaussian elimination to solve the system Ax = b. 
+
+
+
+Definition at line 67 of file Abstract\+Numerical\+Approximation.\+cpp.
+
+\mbox{\Hypertarget{class_abstract_numerical_approximation_a841c83a7ae9f2146001581f3a7f8444a}\label{class_abstract_numerical_approximation_a841c83a7ae9f2146001581f3a7f8444a}} 
+\index{Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}!print\+Weight@{print\+Weight}}
+\index{print\+Weight@{print\+Weight}!Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}}
+\subsubsection{\texorpdfstring{print\+Weight()}{printWeight()}}
+{\footnotesize\ttfamily void Abstract\+Numerical\+Approximation\+::print\+Weight (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ const \&}]{weight }\end{DoxyParamCaption})}
+
+
+
+Function that allows us to print the weight return by the approximation function 
+
+
+
+Definition at line 11 of file Abstract\+Numerical\+Approximation.\+cpp.
+
+\mbox{\Hypertarget{class_abstract_numerical_approximation_abccba1cb27301df86f2adbfa5e6525a5}\label{class_abstract_numerical_approximation_abccba1cb27301df86f2adbfa5e6525a5}} 
+\index{Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}!Solve@{Solve}}
+\index{Solve@{Solve}!Abstract\+Numerical\+Approximation@{Abstract\+Numerical\+Approximation}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Abstract\+Numerical\+Approximation\+::\+Solve (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ double $>$$>$}]{A,  }\item[{vector$<$ double $>$}]{b,  }\item[{int}]{t,  }\item[{vector$<$ double $>$}]{x }\end{DoxyParamCaption})}
+
+
+
+Solve the simplified system made by the gaussian elimination. 
+
+
+
+Definition at line 90 of file Abstract\+Numerical\+Approximation.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_abstract_numerical_approximation_8h}{Abstract\+Numerical\+Approximation.\+h}}\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_abstract_numerical_approximation_8cpp}{Abstract\+Numerical\+Approximation.\+cpp}}\end{DoxyCompactItemize}

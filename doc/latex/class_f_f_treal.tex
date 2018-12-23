@@ -1,0 +1,216 @@
+\hypertarget{class_f_f_treal}{}\section{F\+F\+Treal Class Reference}
+\label{class_f_f_treal}\index{F\+F\+Treal@{F\+F\+Treal}}
+
+
+{\ttfamily \#include $<$F\+F\+Treal.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_f_f_treal_a16caf75d31c313da4c6c1659497434c2}{transform}} (std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&imag)
+\begin{DoxyCompactList}\small\item\em Computes the discrete Fourier transform (D\+FT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_f_f_treal_a1db8c322c9e02acf725f5599c8924d0a}{inverse\+Transform}} (std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&imag)
+\begin{DoxyCompactList}\small\item\em Computes the inverse discrete Fourier transform (I\+D\+FT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. This transform does not perform scaling, so the inverse is not a true inverse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_f_f_treal_afa3f0e3c25513ee26c9698b864330df9}{transform\+Radix2}} (std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&imag)
+\begin{DoxyCompactList}\small\item\em Computes the discrete Fourier transform (D\+FT) of the given complex vector, storing the result back into the vector. The vector\textquotesingle{}s length must be a power of 2. Uses the Cooley-\/\+Tukey decimation-\/in-\/time radix-\/2 algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_f_f_treal_a05861961bccf522231faf434b806e882}{transform\+Bluestein}} (std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&imag)
+\begin{DoxyCompactList}\small\item\em Computes the discrete Fourier transform (D\+FT) of the given complex vector, storing the result back into the vector. The vector can have any length. This requires the convolution function, which in turn requires the radix-\/2 F\+FT function. Uses Bluestein\textquotesingle{}s chirp z-\/transform algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_f_f_treal_a8c7ae7505d1c80b4471a30585801d64b}{convolve}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, std\+::vector$<$ double $>$ \&out)
+\begin{DoxyCompactList}\small\item\em Computes the circular convolution of the given real vectors. Each vector\textquotesingle{}s length must be the same. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_f_f_treal_a375983c9725f461611341061dbdcc92f}{convolve}} (const std\+::vector$<$ double $>$ \&xreal, const std\+::vector$<$ double $>$ \&ximag, const std\+::vector$<$ double $>$ \&yreal, const std\+::vector$<$ double $>$ \&yimag, std\+::vector$<$ double $>$ \&outreal, std\+::vector$<$ double $>$ \&outimag)
+\begin{DoxyCompactList}\small\item\em Computes the circular convolution of the given complex vectors. Each vector\textquotesingle{}s length must be the same. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_f_f_treal_a15989e652f7e5f0e5045ee5d5232d065}{transform\+Coefs}} (const std\+::vector$<$ double $>$ \&real, std\+::vector$<$ double $>$ \&an, std\+::vector$<$ double $>$ \&bn, const size\+\_\+t \&period)
+\begin{DoxyCompactList}\small\item\em Computes the fourier coefficients. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_f_f_treal_ae276d75134969bd4a036f3e9e9136dec}{transform\+Approximation}} (std\+::vector$<$ double $>$ const \&an, std\+::vector$<$ double $>$ const \&bn, const size\+\_\+t \&period, std\+::vector$<$ double $>$ \&real)
+\begin{DoxyCompactList}\small\item\em Computes the fourier series based on the coeficents calculated in the transform\+Coef method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+(Note, this needs exactly one 
+
+Definition at line 29 of file F\+F\+Treal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_f_f_treal_a8c7ae7505d1c80b4471a30585801d64b}\label{class_f_f_treal_a8c7ae7505d1c80b4471a30585801d64b}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!convolve@{convolve}}
+\index{convolve@{convolve}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{convolve()}{convolve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::convolve (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{std\+::vector$<$ double $>$ \&}]{out }\end{DoxyParamCaption})}
+
+
+
+Computes the circular convolution of the given real vectors. Each vector\textquotesingle{}s length must be the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & is a vector with the values of the left element to convolve \\
+\hline
+{\em y} & is a vector with the values of the right element to convolve \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_f_f_treal_a375983c9725f461611341061dbdcc92f}\label{class_f_f_treal_a375983c9725f461611341061dbdcc92f}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!convolve@{convolve}}
+\index{convolve@{convolve}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{convolve()}{convolve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::convolve (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{xreal,  }\item[{const std\+::vector$<$ double $>$ \&}]{ximag,  }\item[{const std\+::vector$<$ double $>$ \&}]{yreal,  }\item[{const std\+::vector$<$ double $>$ \&}]{yimag,  }\item[{std\+::vector$<$ double $>$ \&}]{outreal,  }\item[{std\+::vector$<$ double $>$ \&}]{outimag }\end{DoxyParamCaption})}
+
+
+
+Computes the circular convolution of the given complex vectors. Each vector\textquotesingle{}s length must be the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xreal} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em xreal} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em ximag} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em yimag} & is a vector with the values read from the data.\+dat file, if we have only real entries then you have to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_f_f_treal_a1db8c322c9e02acf725f5599c8924d0a}\label{class_f_f_treal_a1db8c322c9e02acf725f5599c8924d0a}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!inverse\+Transform@{inverse\+Transform}}
+\index{inverse\+Transform@{inverse\+Transform}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{inverse\+Transform()}{inverseTransform()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::inverse\+Transform (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{imag }\end{DoxyParamCaption})}
+
+
+
+Computes the inverse discrete Fourier transform (I\+D\+FT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. This transform does not perform scaling, so the inverse is not a true inverse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em imag} & is a vector with the values read from the data.\+dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file F\+F\+Treal.\+cpp.
+
+\mbox{\Hypertarget{class_f_f_treal_a16caf75d31c313da4c6c1659497434c2}\label{class_f_f_treal_a16caf75d31c313da4c6c1659497434c2}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!transform@{transform}}
+\index{transform@{transform}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::transform (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{imag }\end{DoxyParamCaption})}
+
+
+
+Computes the discrete Fourier transform (D\+FT) of the given complex vector, storing the result back into the vector. The vector can have any length. This is a wrapper function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em imag} & is a vector with the values read from the data.\+dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file F\+F\+Treal.\+cpp.
+
+\mbox{\Hypertarget{class_f_f_treal_ae276d75134969bd4a036f3e9e9136dec}\label{class_f_f_treal_ae276d75134969bd4a036f3e9e9136dec}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!transform\+Approximation@{transform\+Approximation}}
+\index{transform\+Approximation@{transform\+Approximation}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{transform\+Approximation()}{transformApproximation()}}
+{\footnotesize\ttfamily vector$<$ double $>$ F\+F\+Treal\+::transform\+Approximation (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ const \&}]{an,  }\item[{std\+::vector$<$ double $>$ const \&}]{bn,  }\item[{const size\+\_\+t \&}]{period,  }\item[{std\+::vector$<$ double $>$ \&}]{real }\end{DoxyParamCaption})}
+
+
+
+Computes the fourier series based on the coeficents calculated in the transform\+Coef method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em an} & is a vector with the values of the an fourier series coefficients \\
+\hline
+{\em bn} & is a vector with the values of the bn fourier series coefficients \\
+\hline
+{\em period} & represents the period of the chosen periodic funtion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of doubles containing the approximated data 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file F\+F\+Treal.\+cpp.
+
+\mbox{\Hypertarget{class_f_f_treal_a05861961bccf522231faf434b806e882}\label{class_f_f_treal_a05861961bccf522231faf434b806e882}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!transform\+Bluestein@{transform\+Bluestein}}
+\index{transform\+Bluestein@{transform\+Bluestein}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{transform\+Bluestein()}{transformBluestein()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::transform\+Bluestein (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{imag }\end{DoxyParamCaption})}
+
+
+
+Computes the discrete Fourier transform (D\+FT) of the given complex vector, storing the result back into the vector. The vector can have any length. This requires the convolution function, which in turn requires the radix-\/2 F\+FT function. Uses Bluestein\textquotesingle{}s chirp z-\/transform algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em imag} & is a vector with the values read from the data.\+dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 121 of file F\+F\+Treal.\+cpp.
+
+\mbox{\Hypertarget{class_f_f_treal_a15989e652f7e5f0e5045ee5d5232d065}\label{class_f_f_treal_a15989e652f7e5f0e5045ee5d5232d065}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!transform\+Coefs@{transform\+Coefs}}
+\index{transform\+Coefs@{transform\+Coefs}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{transform\+Coefs()}{transformCoefs()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::transform\+Coefs (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{an,  }\item[{std\+::vector$<$ double $>$ \&}]{bn,  }\item[{const size\+\_\+t \&}]{period }\end{DoxyParamCaption})}
+
+
+
+Computes the fourier coefficients. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em an} & is a vector with the values of the an fourier series coefficients \\
+\hline
+{\em bn} & is a vector with the values of the bn fourier series coefficients \\
+\hline
+{\em period} & represents the period of the chosen periodic funtion \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file F\+F\+Treal.\+cpp.
+
+\mbox{\Hypertarget{class_f_f_treal_afa3f0e3c25513ee26c9698b864330df9}\label{class_f_f_treal_afa3f0e3c25513ee26c9698b864330df9}} 
+\index{F\+F\+Treal@{F\+F\+Treal}!transform\+Radix2@{transform\+Radix2}}
+\index{transform\+Radix2@{transform\+Radix2}!F\+F\+Treal@{F\+F\+Treal}}
+\subsubsection{\texorpdfstring{transform\+Radix2()}{transformRadix2()}}
+{\footnotesize\ttfamily void F\+F\+Treal\+::transform\+Radix2 (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{real,  }\item[{std\+::vector$<$ double $>$ \&}]{imag }\end{DoxyParamCaption})}
+
+
+
+Computes the discrete Fourier transform (D\+FT) of the given complex vector, storing the result back into the vector. The vector\textquotesingle{}s length must be a power of 2. Uses the Cooley-\/\+Tukey decimation-\/in-\/time radix-\/2 algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & is a vector with the values read from the data.\+dat file \\
+\hline
+{\em imag} & is a vector with the values read from the data.\+dat file, if we have only real entries then you have to specify a vector with the same size as real but filled with zeros. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file F\+F\+Treal.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_f_f_treal_8h}{F\+F\+Treal.\+h}}\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_f_f_treal_8cpp}{F\+F\+Treal.\+cpp}}\end{DoxyCompactItemize}

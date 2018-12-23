@@ -1,0 +1,3 @@
+/home/pcsc/Documents/pcsc/PCSC2017_Group5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pcsc/Documents/pcsc/PCSC2017_Group5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pcsc/Documents/pcsc/PCSC2017_Group5/cmake-build-debug/CMakeFiles/PCSC2017_Group5.dir

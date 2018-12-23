@@ -1,0 +1,191 @@
+\hypertarget{class_test}{}\section{Test Class Reference}
+\label{class_test}\index{Test@{Test}}
+
+
+{\ttfamily \#include $<$Test.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_test_a99f2bbfac6c95612322b0f10e607ebe5}{Test}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the class. Defines the values of all the class attributes. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_test_a4789b9d0192ae0a3c6f88a7777a6bc57}{test\+Fourier}} ()
+\begin{DoxyCompactList}\small\item\em Computes Fraction of accurately predicted values while comparing the values between predicted output and real value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_test_a822cf87174e675d0c0f3e2c9d4d8344b}{test\+Least\+Squares}} ()
+\begin{DoxyCompactList}\small\item\em Computes Fraction of accurately predicted values while comparing the values between predicted output and real value for the Fourrier approximation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_test_ae43e2b7e77bbd96d43684c78ca4ee836}{test\+Lagrange}} ()
+\begin{DoxyCompactList}\small\item\em Computes Fraction of accurately predicted values while comparing the values between predicted output and real value for the \mbox{\hyperlink{class_lagrange}{Lagrange}} interpolation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_test_a3dd2e280b828fac8d1509d04d46ddb84}{test\+Lagrange\+Piecewise}} ()
+\begin{DoxyCompactList}\small\item\em Computes Fraction of accurately predicted values while comparing the values between predicted output and real value for the Piece\+Wise \mbox{\hyperlink{class_lagrange}{Lagrange}} approximation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_test_a617c228a5a5299a5a00d3905531ae203}{test\+Least\+Squares\+Piece\+Wise}} ()
+\begin{DoxyCompactList}\small\item\em Computes Fraction of accurately predicted values while comparing the values between predicted output and real value Piece\+Wise Least Square approximation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_test_abdad04cdc0b60534db1fd18daa2c7f01}{Compare\+Doubles2}} (double const \&A, double const \&B) const
+\begin{DoxyCompactList}\small\item\em returns a boolean values about if 2 given numbers are equal taking in account a certain margin \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_test_a80c91a350570efe1b80484dc2ecc8c66}{generate\+\_\+test}} (vector$<$ double $>$ const \&x, vector$<$ double $>$ const \&y) const
+\begin{DoxyCompactList}\small\item\em returns a the fraction of correct interpolations performed by the code. During the execution of the code all the framework necessary to perform the test is also implemented. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+(Note, this needs exactly one 
+
+Definition at line 29 of file Test.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_test_a99f2bbfac6c95612322b0f10e607ebe5}\label{class_test_a99f2bbfac6c95612322b0f10e607ebe5}} 
+\index{Test@{Test}!Test@{Test}}
+\index{Test@{Test}!Test@{Test}}
+\subsubsection{\texorpdfstring{Test()}{Test()}}
+{\footnotesize\ttfamily Test\+::\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the class. Defines the values of all the class attributes. 
+
+
+
+Definition at line 34 of file Test.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_test_abdad04cdc0b60534db1fd18daa2c7f01}\label{class_test_abdad04cdc0b60534db1fd18daa2c7f01}} 
+\index{Test@{Test}!Compare\+Doubles2@{Compare\+Doubles2}}
+\index{Compare\+Doubles2@{Compare\+Doubles2}!Test@{Test}}
+\subsubsection{\texorpdfstring{Compare\+Doubles2()}{CompareDoubles2()}}
+{\footnotesize\ttfamily bool Test\+::\+Compare\+Doubles2 (\begin{DoxyParamCaption}\item[{double const \&}]{A,  }\item[{double const \&}]{B }\end{DoxyParamCaption}) const}
+
+
+
+returns a boolean values about if 2 given numbers are equal taking in account a certain margin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & number 1 to compare \\
+\hline
+{\em double} & number 2 to compare with double number 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if the numbers are in the wrigth interval 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Test.\+cpp.
+
+\mbox{\Hypertarget{class_test_a80c91a350570efe1b80484dc2ecc8c66}\label{class_test_a80c91a350570efe1b80484dc2ecc8c66}} 
+\index{Test@{Test}!generate\+\_\+test@{generate\+\_\+test}}
+\index{generate\+\_\+test@{generate\+\_\+test}!Test@{Test}}
+\subsubsection{\texorpdfstring{generate\+\_\+test()}{generate\_test()}}
+{\footnotesize\ttfamily double Test\+::generate\+\_\+test (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ const \&}]{x,  }\item[{vector$<$ double $>$ const \&}]{y }\end{DoxyParamCaption}) const}
+
+
+
+returns a the fraction of correct interpolations performed by the code. During the execution of the code all the framework necessary to perform the test is also implemented. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & is a vector containing the interpolated data \\
+\hline
+{\em y} & is a vector containing the control data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fraction of correct interpolated data. 
+\end{DoxyReturn}
+Plot/// 
+
+Definition at line 115 of file Test.\+cpp.
+
+\mbox{\Hypertarget{class_test_a4789b9d0192ae0a3c6f88a7777a6bc57}\label{class_test_a4789b9d0192ae0a3c6f88a7777a6bc57}} 
+\index{Test@{Test}!test\+Fourier@{test\+Fourier}}
+\index{test\+Fourier@{test\+Fourier}!Test@{Test}}
+\subsubsection{\texorpdfstring{test\+Fourier()}{testFourier()}}
+{\footnotesize\ttfamily double Test\+::test\+Fourier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes Fraction of accurately predicted values while comparing the values between predicted output and real value. 
+
+\begin{DoxyReturn}{Returns}
+Fraction of accurately predicted 
+\end{DoxyReturn}
+
+
+Definition at line 6 of file Test.\+cpp.
+
+\mbox{\Hypertarget{class_test_ae43e2b7e77bbd96d43684c78ca4ee836}\label{class_test_ae43e2b7e77bbd96d43684c78ca4ee836}} 
+\index{Test@{Test}!test\+Lagrange@{test\+Lagrange}}
+\index{test\+Lagrange@{test\+Lagrange}!Test@{Test}}
+\subsubsection{\texorpdfstring{test\+Lagrange()}{testLagrange()}}
+{\footnotesize\ttfamily double Test\+::test\+Lagrange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes Fraction of accurately predicted values while comparing the values between predicted output and real value for the \mbox{\hyperlink{class_lagrange}{Lagrange}} interpolation. 
+
+\begin{DoxyReturn}{Returns}
+Fraction of accurately predicted 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Test.\+cpp.
+
+\mbox{\Hypertarget{class_test_a3dd2e280b828fac8d1509d04d46ddb84}\label{class_test_a3dd2e280b828fac8d1509d04d46ddb84}} 
+\index{Test@{Test}!test\+Lagrange\+Piecewise@{test\+Lagrange\+Piecewise}}
+\index{test\+Lagrange\+Piecewise@{test\+Lagrange\+Piecewise}!Test@{Test}}
+\subsubsection{\texorpdfstring{test\+Lagrange\+Piecewise()}{testLagrangePiecewise()}}
+{\footnotesize\ttfamily double Test\+::test\+Lagrange\+Piecewise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes Fraction of accurately predicted values while comparing the values between predicted output and real value for the Piece\+Wise \mbox{\hyperlink{class_lagrange}{Lagrange}} approximation. 
+
+\begin{DoxyReturn}{Returns}
+Fraction of accurately predicted 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file Test.\+cpp.
+
+\mbox{\Hypertarget{class_test_a822cf87174e675d0c0f3e2c9d4d8344b}\label{class_test_a822cf87174e675d0c0f3e2c9d4d8344b}} 
+\index{Test@{Test}!test\+Least\+Squares@{test\+Least\+Squares}}
+\index{test\+Least\+Squares@{test\+Least\+Squares}!Test@{Test}}
+\subsubsection{\texorpdfstring{test\+Least\+Squares()}{testLeastSquares()}}
+{\footnotesize\ttfamily double Test\+::test\+Least\+Squares (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes Fraction of accurately predicted values while comparing the values between predicted output and real value for the Fourrier approximation. 
+
+\begin{DoxyReturn}{Returns}
+Fraction of accurately predicted 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Test.\+cpp.
+
+\mbox{\Hypertarget{class_test_a617c228a5a5299a5a00d3905531ae203}\label{class_test_a617c228a5a5299a5a00d3905531ae203}} 
+\index{Test@{Test}!test\+Least\+Squares\+Piece\+Wise@{test\+Least\+Squares\+Piece\+Wise}}
+\index{test\+Least\+Squares\+Piece\+Wise@{test\+Least\+Squares\+Piece\+Wise}!Test@{Test}}
+\subsubsection{\texorpdfstring{test\+Least\+Squares\+Piece\+Wise()}{testLeastSquaresPieceWise()}}
+{\footnotesize\ttfamily double Test\+::test\+Least\+Squares\+Piece\+Wise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes Fraction of accurately predicted values while comparing the values between predicted output and real value Piece\+Wise Least Square approximation. 
+
+\begin{DoxyReturn}{Returns}
+Fraction of accurately predicted 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Test.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_test_8h}{Test.\+h}}\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{_test_8cpp}{Test.\+cpp}}\end{DoxyCompactItemize}

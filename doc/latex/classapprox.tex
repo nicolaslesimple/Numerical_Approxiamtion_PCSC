@@ -1,0 +1,137 @@
+\hypertarget{classapprox}{}\section{approx Class Reference}
+\label{classapprox}\index{approx@{approx}}
+
+
+{\ttfamily \#include $<$approx.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classapprox_a125182047a0ed636dbbe045f0734f39b}{$\sim$approx}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classapprox_a56625b15475b445d745951979beb33cd}{solve}} (double $\ast$$\ast$T, config configuration, double $\ast$$\ast$Points, double $\ast$$\ast$Intervale, int \&nb\+\_\+intervale)=0
+\item 
+void \mbox{\hyperlink{classapprox_a2ebff31fe5a8710ead73f59d3c3d51fe}{Gaussian\+Elimination}} (double $\ast$$\ast$\&A, double $\ast$\&b, int t)
+\begin{DoxyCompactList}\small\item\em Do the gaussian elimination to solve the system Ax = b. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classapprox_abdc5782a1aede87d2776dda3c4670762}{Swap}} (double $\ast$$\ast$\&A, double $\ast$\&b, const int k, int t)
+\begin{DoxyCompactList}\small\item\em Swap lines to always have the biggest value at the top, less numerical errors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classapprox_a526c22dfc3fe842580ca8ee388c28ef1}{Solve}} (double $\ast$$\ast$\&A, double $\ast$\&b, int t, double $\ast$\&x)
+\begin{DoxyCompactList}\small\item\em Solve the simplified system made by the gaussian elimination. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classapprox_aee0082214b62e8ee5ad5194260414ad7}{String\+To\+Number}} (const string \&Text)
+\item 
+void \mbox{\hyperlink{classapprox_a342792f126728ac2ffecae1599420946}{write\+\_\+polynome\+\_\+points}} (double $\ast$a, double $\ast$interval, int taille\+\_\+a, int \&count)
+\begin{DoxyCompactList}\small\item\em Write the interpolated points into a file (B\+N\+Uprint.\+dat) in order to print them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classapprox_a4c392064b5f2c9cd4ba96ade669571c1}{G\+N\+Uprint}} (double $\ast$$\ast$Points, int Npts, config configuration)
+\begin{DoxyCompactList}\small\item\em Call G\+N\+Uplot to print the G\+N\+Uprint.\+data file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file approx.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classapprox_a125182047a0ed636dbbe045f0734f39b}\label{classapprox_a125182047a0ed636dbbe045f0734f39b}} 
+\index{approx@{approx}!````~approx@{$\sim$approx}}
+\index{````~approx@{$\sim$approx}!approx@{approx}}
+\subsubsection{\texorpdfstring{$\sim$approx()}{~approx()}}
+{\footnotesize\ttfamily approx\+::$\sim$approx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Definition at line 19 of file approx.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classapprox_a2ebff31fe5a8710ead73f59d3c3d51fe}\label{classapprox_a2ebff31fe5a8710ead73f59d3c3d51fe}} 
+\index{approx@{approx}!Gaussian\+Elimination@{Gaussian\+Elimination}}
+\index{Gaussian\+Elimination@{Gaussian\+Elimination}!approx@{approx}}
+\subsubsection{\texorpdfstring{Gaussian\+Elimination()}{GaussianElimination()}}
+{\footnotesize\ttfamily void approx\+::\+Gaussian\+Elimination (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$\&}]{A,  }\item[{double $\ast$\&}]{b,  }\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Do the gaussian elimination to solve the system Ax = b. 
+
+
+
+Definition at line 73 of file approx.\+cpp.
+
+\mbox{\Hypertarget{classapprox_a4c392064b5f2c9cd4ba96ade669571c1}\label{classapprox_a4c392064b5f2c9cd4ba96ade669571c1}} 
+\index{approx@{approx}!G\+N\+Uprint@{G\+N\+Uprint}}
+\index{G\+N\+Uprint@{G\+N\+Uprint}!approx@{approx}}
+\subsubsection{\texorpdfstring{G\+N\+Uprint()}{GNUprint()}}
+{\footnotesize\ttfamily void approx\+::\+G\+N\+Uprint (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{Points,  }\item[{int}]{Npts,  }\item[{config}]{configuration }\end{DoxyParamCaption})}
+
+
+
+Call G\+N\+Uplot to print the G\+N\+Uprint.\+data file. 
+
+
+
+Definition at line 46 of file approx.\+cpp.
+
+\mbox{\Hypertarget{classapprox_a56625b15475b445d745951979beb33cd}\label{classapprox_a56625b15475b445d745951979beb33cd}} 
+\index{approx@{approx}!solve@{solve}}
+\index{solve@{solve}!approx@{approx}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily virtual void approx\+::solve (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{T,  }\item[{config}]{configuration,  }\item[{double $\ast$$\ast$}]{Points,  }\item[{double $\ast$$\ast$}]{Intervale,  }\item[{int \&}]{nb\+\_\+intervale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classapprox_a526c22dfc3fe842580ca8ee388c28ef1}\label{classapprox_a526c22dfc3fe842580ca8ee388c28ef1}} 
+\index{approx@{approx}!Solve@{Solve}}
+\index{Solve@{Solve}!approx@{approx}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily void approx\+::\+Solve (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$\&}]{A,  }\item[{double $\ast$\&}]{b,  }\item[{int}]{t,  }\item[{double $\ast$\&}]{x }\end{DoxyParamCaption})}
+
+
+
+Solve the simplified system made by the gaussian elimination. 
+
+
+
+Definition at line 119 of file approx.\+cpp.
+
+\mbox{\Hypertarget{classapprox_aee0082214b62e8ee5ad5194260414ad7}\label{classapprox_aee0082214b62e8ee5ad5194260414ad7}} 
+\index{approx@{approx}!String\+To\+Number@{String\+To\+Number}}
+\index{String\+To\+Number@{String\+To\+Number}!approx@{approx}}
+\subsubsection{\texorpdfstring{String\+To\+Number()}{StringToNumber()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T approx\+::\+String\+To\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{Text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classapprox_abdc5782a1aede87d2776dda3c4670762}\label{classapprox_abdc5782a1aede87d2776dda3c4670762}} 
+\index{approx@{approx}!Swap@{Swap}}
+\index{Swap@{Swap}!approx@{approx}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily void approx\+::\+Swap (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$\&}]{A,  }\item[{double $\ast$\&}]{b,  }\item[{const int}]{k,  }\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Swap lines to always have the biggest value at the top, less numerical errors. 
+
+
+
+Definition at line 96 of file approx.\+cpp.
+
+\mbox{\Hypertarget{classapprox_a342792f126728ac2ffecae1599420946}\label{classapprox_a342792f126728ac2ffecae1599420946}} 
+\index{approx@{approx}!write\+\_\+polynome\+\_\+points@{write\+\_\+polynome\+\_\+points}}
+\index{write\+\_\+polynome\+\_\+points@{write\+\_\+polynome\+\_\+points}!approx@{approx}}
+\subsubsection{\texorpdfstring{write\+\_\+polynome\+\_\+points()}{write\_polynome\_points()}}
+{\footnotesize\ttfamily void approx\+::write\+\_\+polynome\+\_\+points (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{interval,  }\item[{int}]{taille\+\_\+a,  }\item[{int \&}]{count }\end{DoxyParamCaption})}
+
+
+
+Write the interpolated points into a file (B\+N\+Uprint.\+dat) in order to print them. 
+
+
+
+Definition at line 22 of file approx.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{approx_8hpp}{approx.\+hpp}}\item 
+/\+Users/davidcleres/\+C\+Lion\+Projects/\+P\+C\+S\+C2017\+\_\+\+Group5/\mbox{\hyperlink{approx_8cpp}{approx.\+cpp}}\end{DoxyCompactItemize}
